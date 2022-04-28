@@ -8,7 +8,7 @@ client.on('message',(msg)=>{
     var msgObj = new Message(msg);
 })
 
-var shceduleSending = new job('00 25 23 * * * ',()=>{
+var shceduleSending = new job('00 10 22 * * * ',()=>{
     try {
         u.then(async (userIdArray)=>{
             await userIdArray.forEach((uidObj)=>{
